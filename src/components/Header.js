@@ -40,6 +40,15 @@ function Header() {
             );
           })}
         </div>
+        <div className='md-flex flex-col lg:hidden xl:hidden 2xl:hidden'>
+          {menuItems.map((item) => {
+            return (
+              <li className='list-none mx-5'>
+                <Link to={`${item.key}`}>{item.title}</Link>
+              </li>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
