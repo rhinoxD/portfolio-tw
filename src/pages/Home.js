@@ -1,10 +1,21 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import {
+  FaReact,
+  FaBootstrap,
+  FaHtml5,
+  FaCss3,
+  FaJsSquare,
+  FaNodeJs,
+  FaPython,
+} from 'react-icons/fa';
+import { SiMongodb, SiDjango } from 'react-icons/si';
 
 function Home() {
   return (
     <Layout>
       <div>
+        {/* Intro Section */}
         <div className='h-screen bg-theme'>
           <div
             className='grid grid-cols-2 md:grid-cols-1 h-screen items-center 
@@ -28,6 +39,43 @@ function Home() {
                 FullStack <b className='text-red-500'>Developer</b>
               </h1>
             </div>
+          </div>
+        </div>
+        {/* Technologies */}
+        <div className='mt-28'>
+          <h1 className='text-4xl text-blue-800 font-cold text-center my-12'>
+            Technologies I Use
+          </h1>
+          <div className='grid grid-cols-4 md:grid-cols-1'>
+            <FaReact className='w-full text-center' size={180} color='cyan' />
+            <FaBootstrap
+              className='w-full text-center'
+              size={180}
+              color='blue'
+            />
+            <FaHtml5
+              className='w-full text-center'
+              size={180}
+              color='orangered'
+            />
+            <FaCss3 className='w-full text-center' size={180} color='blue' />
+            <FaJsSquare
+              className='w-full text-center'
+              size={180}
+              color='#f6e336'
+            />
+            <FaNodeJs className='w-full text-center' size={180} color='green' />
+            <SiMongodb
+              className='w-full text-center'
+              size={180}
+              color='green'
+            />
+            <FaPython
+              className='w-full text-center'
+              size={180}
+              color='lightblue'
+            />
+            <SiDjango className='w-full text-center' size={180} color='green' />
           </div>
         </div>
       </div>
