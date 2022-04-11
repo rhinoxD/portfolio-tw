@@ -101,7 +101,10 @@ function Home() {
               Yes You're Right... I'm a Javascript Buff
             </h1>
           </div>
-          <div>
+          <div
+            className='mx-56 md:mx-5 shadow-2xl bg-gray-50 -mt-20 
+          rounded-lg hover:bg-gray-700 hover:text-white'
+          >
             <div className='h-96'>
               <lottie-player
                 src='https://assets8.lottiefiles.com/packages/lf20_yd8fbnml.json'
@@ -110,12 +113,12 @@ function Home() {
                 loop
                 autoplay
               ></lottie-player>
-              <p className='text-xl my-5 font-semibold md:px-5 px-14 py-10'>
-                JavaScript is one of the most top-ranked programming languages
-                because of its ubiquitous use on all platforms and mass
-                adoption. Main Use Cases: Web Development.
-              </p>
             </div>
+            <p className='text-xl my-5 font-semibold md:px-5 px-14 py-10'>
+              JavaScript is one of the most top-ranked programming languages
+              because of its ubiquitous use on all platforms and mass adoption.
+              Main Use Cases: Web Development.
+            </p>
           </div>
         </div>
       </div>
