@@ -20,7 +20,7 @@ function Header() {
   ];
   const pathname = window.location.pathname;
   return (
-    <div className='text-white font-mont'>
+    <div className='text-white font-mont fixed inset-0 z-10'>
       <div
         className={`flex bg-theme justify-between items-center p-2 shadow-lg ${
           showMenu == '' && 'md:flex-col'

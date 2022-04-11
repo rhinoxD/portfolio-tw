@@ -6,7 +6,10 @@ function Home() {
     <Layout>
       <div>
         <div className='h-screen bg-theme'>
-          <div className='grid grid-cols-2 md:grid-cols-1 h-screen items-center'>
+          <div
+            className='grid grid-cols-2 md:grid-cols-1 h-screen items-center 
+            border-4 border-white transform rotate-12 md:border-0 md:rotate-0 mx-6 bg-theme'
+          >
             <div className='h-1/2'>
               <lottie-player
                 src='https://assets10.lottiefiles.com/private_files/lf30_obidsi0t.json'
