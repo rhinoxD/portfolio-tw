@@ -43,39 +43,55 @@ function Home() {
         </div>
         {/* Technologies */}
         <div className='mt-28'>
-          <h1 className='text-4xl text-blue-800 font-cold text-center my-12'>
+          <h1 className='text-4xl text-blue-800 font-bold text-center my-1'>
             Technologies I Use
           </h1>
           <div className='grid grid-cols-4 md:grid-cols-1'>
-            <FaReact className='w-full text-center' size={180} color='cyan' />
+            <FaReact
+              className='w-full text-center mt-20'
+              size={180}
+              color='cyan'
+            />
             <FaBootstrap
-              className='w-full text-center'
+              className='w-full text-center mt-20 animate-bounce'
               size={180}
               color='blue'
             />
             <FaHtml5
-              className='w-full text-center'
+              className='w-full text-center mt-20'
               size={180}
               color='orangered'
             />
-            <FaCss3 className='w-full text-center' size={180} color='blue' />
+            <FaCss3
+              className='w-full text-center mt-20 animate-bounce'
+              size={180}
+              color='blue'
+            />
             <FaJsSquare
-              className='w-full text-center'
+              className='w-full text-center mt-20 animate-bounce'
               size={180}
               color='#f6e336'
             />
-            <FaNodeJs className='w-full text-center' size={180} color='green' />
+            <FaNodeJs
+              className='w-full text-center mt-20'
+              size={180}
+              color='green'
+            />
             <SiMongodb
-              className='w-full text-center'
+              className='w-full text-center mt-20 animate-bounce'
               size={180}
               color='green'
             />
             <FaPython
-              className='w-full text-center'
+              className='w-full text-center mt-20'
               size={180}
               color='lightblue'
             />
-            <SiDjango className='w-full text-center' size={180} color='green' />
+            {/* <SiDjango
+              className='w-full text-center mt-20'
+              size={180}
+              color='green'
+            /> */}
           </div>
         </div>
       </div>
