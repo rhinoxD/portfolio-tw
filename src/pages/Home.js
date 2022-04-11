@@ -94,6 +94,28 @@ function Home() {
             /> */}
           </div>
         </div>
+        {/* Javascript Section */}
+        <div className='my-20'>
+          <div className='text-center h-52 bg-primary'>
+            <h1 className='text-white font-bold text-3xl py-10'>
+              Yes You're Right... I'm a Javascript Buff
+            </h1>
+          </div>
+          <div className='h-96'>
+            <lottie-player
+              src='https://assets8.lottiefiles.com/packages/lf20_yd8fbnml.json'
+              background='transparent'
+              speed='1'
+              loop
+              autoplay
+            ></lottie-player>
+            <p className='text-xl my-5 font-semibold md:px-5 px-14 py-10'>
+              JavaScript is one of the most top-ranked programming languages
+              because of its ubiquitous use on all platforms and mass adoption.
+              Main Use Cases: Web Development.
+            </p>
+          </div>
+        </div>
       </div>
     </Layout>
   );
