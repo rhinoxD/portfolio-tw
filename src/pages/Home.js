@@ -105,7 +105,7 @@ function Home() {
           </div>
           <div
             className='mx-56 md:mx-5 shadow-2xl bg-gray-50 -mt-20 
-          rounded-lg hover:bg-gray-700 hover:text-white'
+          rounded-lg hover:bg-gray-700 hover:text-white hover:scale-105 ease-in duration-200'
           >
             <div className='h-96'>
               <lottie-player
@@ -128,12 +128,12 @@ function Home() {
         <div className='my-20'>
           <div className='text-center h-52 bg-red-400'>
             <h1 className='text-white font-bold text-3xl py-10'>
-              My DEV Stack
+              My Development Stack
             </h1>
           </div>
           <div
             className='mx-56 md:mx-5 shadow-2xl bg-gray-50 -mt-20 
-          rounded-lg hover:bg-gray-700 hover:text-white'
+          rounded-lg hover:bg-gray-700 hover:text-white hover:scale-105 ease-in duration-200'
           >
             <div className='h-96'>
               <lottie-player
@@ -162,13 +162,49 @@ function Home() {
                 <p className='font-semibold mt-2'>Semantic UI</p>
               </div>
               <div className='text-right'>
-                <h1 className='text-xl font-bold'>Backend and DB</h1>
+                <h1 className='text-xl font-bold'>Backend / DB</h1>
                 <hr />
                 <p className='font-semibold mt-2'>Node JS</p>
                 <p className='font-semibold mt-2'>Express JS</p>
                 <p className='font-semibold mt-2'>My SQL</p>
                 <p className='font-semibold mt-2'>Mongo DB</p>
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Dev Info */}
+        <div>
+          <h1 className='text-4xl text-gray-700 text-center font-bold'>
+            Who is Shivam ?
+          </h1>
+          <div className='h-screen relative text-gray-800'>
+            <div className='h-full'>
+              <lottie-player
+                src='https://assets3.lottiefiles.com/packages/lf20_dcatp5cr.json'
+                background='transparent'
+                speed='1'
+                loop
+                autoplay
+              ></lottie-player>
+            </div>
+            <div className='absolute inset-0 flex flex-col items-center justify-center'>
+              <h1 className='text-2xl font-bold'>
+                Hi , Hello , Namaste...
+                <hr />
+                <pre className='text-xl md:text-sm my-5 font-mont font-semibold'>
+                  {JSON.stringify(
+                    {
+                      name: 'Shivam Kumar',
+                      age: 21,
+                      gender: 'Male',
+                      country: 'INDIA',
+                    },
+                    null,
+                    2
+                  )}
+                </pre>
+              </h1>
             </div>
           </div>
         </div>
