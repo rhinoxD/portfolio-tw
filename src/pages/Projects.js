@@ -1,6 +1,10 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import projectsData from '../resources/projects';
+import AOS from 'aos';
+AOS.init({
+  duration: 1000,
+});
 
 function Projects() {
   return (
@@ -39,7 +43,6 @@ function Projects() {
           </h1>
         </div>
       </div>
-
       <div
         className='grid mt-20 md:grid-cols-1 grid-cols-3 items-center 
       justify-center gap-10 mx-56 md:mx-5'
