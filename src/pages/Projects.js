@@ -48,7 +48,7 @@ function Projects() {
           return (
             <div>
               <div
-                className='p-9 border-2 text-center rounded-tr-3xl 
+                className='relative p-9 border-2 text-center rounded-tr-3xl 
               rounded-bl-3xl border-gray-400'
               >
                 <img
@@ -57,6 +57,21 @@ function Projects() {
                   height='220'
                   className='w-full h-52 text-center'
                 />
+                <div
+                  className='absolute inset-0 flex items-center 
+                justify-center flex-col opacity-0 bg-black hover:opacity-80
+                hover:rounded-tr-3xl hover:rounded-bl-3xl'
+                >
+                  <h1 className='text-4xl font-semibold text-white'>
+                    {project.title}
+                  </h1>
+                  <button
+                    className='border-2 rounded border-white px-5 py-2 
+                  hover:bg-green-500 mt-5 text-white'
+                  >
+                    DEMO
+                  </button>
+                </div>
               </div>
             </div>
           );
