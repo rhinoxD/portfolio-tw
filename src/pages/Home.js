@@ -18,12 +18,13 @@ AOS.init({
 function Home() {
   return (
     <Layout>
-      <div>
+      <div className='md:overflow-x-hidden'>
         {/* Intro Section */}
         <div className='h-screen bg-theme'>
           <div
             className='grid grid-cols-2 md:grid-cols-1 h-screen items-center 
-            border-4 border-white transform rotate-12 md:border-0 md:rotate-0 mx-6 bg-theme'
+            border-4 border-white transform rotate-12 md:border-0 
+            md:rotate-0 mx-6 bg-theme md:w-screen '
           >
             <div className='h-1/2'>
               <lottie-player

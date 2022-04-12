@@ -9,7 +9,7 @@ AOS.init({
 function Projects() {
   return (
     <Layout>
-      <div className='mt-20'>
+      <div className='mt-20 md:overflow-x-hidden'>
         <div className='h-screen'>
           <div className='h-3/4'>
             <lottie-player
