@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import projectsData from '../resources/projects';
 
 function Projects() {
   return (
@@ -37,6 +38,29 @@ function Projects() {
             CONSISTENCY
           </h1>
         </div>
+      </div>
+
+      <div
+        className='grid mt-20 md:grid-cols-1 grid-cols-3 items-center 
+      justify-center gap-10 mx-56 md:mx-5'
+      >
+        {projectsData.map((project) => {
+          return (
+            <div>
+              <div
+                className='p-9 border-2 text-center rounded-tr-3xl 
+              rounded-bl-3xl border-gray-400'
+              >
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  height='220'
+                  className='w-full h-52 text-center'
+                />
+              </div>
+            </div>
+          );
+        })}
       </div>
     </Layout>
   );
