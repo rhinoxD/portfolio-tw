@@ -3,6 +3,8 @@ import './App.css';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
   return (

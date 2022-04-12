@@ -10,6 +10,10 @@ import {
   FaPython,
 } from 'react-icons/fa';
 import { SiMongodb, SiDjango } from 'react-icons/si';
+import AOS from 'aos';
+AOS.init({
+  duration: 1000,
+});
 
 function Home() {
   return (
@@ -32,10 +36,10 @@ function Home() {
               ></lottie-player>
             </div>
             <div className='font-bold text-white md:px-5'>
-              <h1 className='text-7xl md:text-4xl'>
+              <h1 className='text-7xl md:text-4xl' data-aos='slide-right'>
                 Hii, I am <b className='text-yellow-500'>SHIVAM</b>
               </h1>
-              <h1 className='text-4xl md:text-xl'>
+              <h1 className='text-4xl md:text-xl' data-aos='slide-left'>
                 FullStack <b className='text-red-500'>Developer</b>
               </h1>
             </div>
@@ -44,7 +48,10 @@ function Home() {
 
         {/* Technologies */}
         <div className='mt-28'>
-          <h1 className='text-4xl text-blue-800 font-bold text-center my-1'>
+          <h1
+            className='text-4xl text-blue-800 font-bold text-center my-1'
+            data-aos='slide-up'
+          >
             Technologies I Use
           </h1>
           <div className='grid grid-cols-4 md:grid-cols-1'>
@@ -107,7 +114,7 @@ function Home() {
             className='mx-56 md:mx-5 shadow-2xl bg-gray-50 -mt-20 
           rounded-lg hover:bg-gray-700 hover:text-white hover:scale-105 ease-in duration-200'
           >
-            <div className='h-96'>
+            <div className='h-96' data-aos='zoom-out'>
               <lottie-player
                 src='https://assets8.lottiefiles.com/packages/lf20_yd8fbnml.json'
                 background='transparent'
@@ -135,7 +142,7 @@ function Home() {
             className='mx-56 md:mx-5 shadow-2xl bg-gray-50 -mt-20 
           rounded-lg hover:bg-gray-700 hover:text-white hover:scale-105 ease-in duration-200'
           >
-            <div className='h-96'>
+            <div className='h-96' data-aos='zoom-in'>
               <lottie-player
                 src='https://assets2.lottiefiles.com/packages/lf20_vybwn7df.json'
                 background='transparent'
