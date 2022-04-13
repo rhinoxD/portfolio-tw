@@ -19,9 +19,15 @@ function Footer() {
             <p className='text-gray-50 pb-5'>Designed and Developed By</p>
             <div className='h-1 border-2 border-white border-dotted'></div>
             <div className='flex text-white w-full justify-between py-3'>
-              <FaMailBulk />
-              <FaLinkedin />
-              <FaGithub />
+              <a href='mailto:shivamsk0721@gmail.com'>
+                <FaMailBulk />
+              </a>
+              <a href='https://www.linkedin.com/in/the-shivamkumar/'>
+                <FaLinkedin />
+              </a>
+              <a href='https://github.com/rhinoxD'>
+                <FaGithub />
+              </a>
             </div>
             <div className='h-1 border-2 border-gray-50 border-dotted'></div>
             <p className='text-gray-50 mt-10'>Shivam Kumar</p>
