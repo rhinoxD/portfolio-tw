@@ -68,12 +68,16 @@ function Projects() {
                   <h1 className='text-4xl font-semibold text-white'>
                     {project.title}
                   </h1>
-                  <button
-                    className='border-2 rounded border-white px-5 py-2 
+                  <hr />
+                  <p className='text-sm text-white'>{project.description}</p>
+                  <a className='demo' href={project.link}>
+                    <button
+                      className='border-2 rounded border-white px-5 py-2 
                   hover:bg-green-500 mt-5 text-white'
-                  >
-                    DEMO
-                  </button>
+                    >
+                      DEMO
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
